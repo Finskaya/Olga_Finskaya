@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo</title>
+</head>
+<body> 
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <h1>Форма заявки на работу в зоопарк</h1>
+        <p>Пожалуйста, заполните форму. Обязательные поля помечены</p>
+<fieldset>
+    <legend> Контактная информация</legend>
+    <label> Имя <input type="tex"></label>
+    <br> <br>
+    <label>Телефон<input type="number"> </label>
+    <br> <br>
+    <label>email<input type="email"> </label>
+    
+</fieldset>
+<fieldset>
+    <legend>Персональная информация</legend>
+    <label>Возраст <input type="number" min="16" max="60"></label> <br> <br>
+    <label>Пол <select name="Пол">
+        <option value="Женщина">Женщина</option>
+        <option value="Мужчина">Мужчина</option></label><br> <br>
+    
+</select>
+<legend>Перечислите личные качества</legend>
+<textarea name="text" cols="30" rows="10"></textarea>
+</fieldset>
+<fieldset>
+    <legend>Выберите ваших любимых животных</legend>
+    <input type="checkbox" name="Зебра">зебра
+    <input type="checkbox" name="Слон">слон
+    <input type="checkbox" name="Кот">кот
+    <input type="checkbox" name="Антилопа">антилопа
+    <input type="checkbox" name="Анаконда">анаконда
+    <input type="checkbox" name="Голубь">голубь
+    <input type="checkbox" name="Человек">человек
+    <input type="checkbox" name="Краб">краб
+</fieldset> <br>
+<input type="submit">
+</body>
+</html>
