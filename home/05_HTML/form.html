@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>form 05HTML</title>
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data"></form>
+    <table width="1000">
+        <tr>
+            <td><b>Простая форма поиска с вариантами:</b><br>
+                <fieldset>строка поиска<br><br>
+                    <label><input type="tex" maxlength="30"></label><input type="submit" value="искать"><br><br>
+                    <input type="radio" name="на сайте" value="radio1">на сайте
+                    <input type="radio" name="в google" value="radio2">в google
+                </fieldset>
+            </td>
+            <td><b>Простая форма поиска с вариантами:</b>
+                <fieldset>строка поиска<br><br>
+                    <label><input type="tex"></label>&lowast; <input type="submit" value="искать"><br><br>
+                    <input type="radio" name="на сайте" value="radio1">на сайте
+                    <input type="radio" name="в google" value="radio2">в google
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Простая форма авторизации:<br></b>
+                <fieldset>строка поиска<br><br>
+                    <label><input type="tex">&lowast;Логин</label><br>
+                    <label><input type="tex">&lowast;Пароль</label><br><br>
+                    <input type="checkbox" name="checkbox1" value="checkbox1">Оставаться в системе
+                    <input type="submit" value="войти">
+            </td>
+            <td><b>Опрос(голосование):</b><br>
+                <fieldset>Как вам?<br>
+                    <label>
+                        <input type="radio" name="ничего" value="radio3">ничего
+                    </label><br>
+                    <label>
+                        <input type="radio" name="неплохо" value="radio4">неплохо
+                    </label><br>
+                    <label>
+                        <input type="radio" name="хорошо" value="radio5">хорошо
+                    </label><br>
+                    <label>
+                        <input type="radio" name="супер" value="radio6">супер
+                    </label><br>
+                    <input type="submit">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Отзыв:</b>
+                <fieldset>Оставьте ваш отзыв<br>
+                    <label><input type="tex">&lowast;Имя</label><br>
+                    <label><input type="email">&lowast;e-mail</label><br>
+                    <textarea name="форма отправки" cols="15" rows="3">форма отправки</textarea>
+                    <form id="e-mail" name="e-mail" method="post"></form>
+                    <input type="submit" value="Отправить">
+                </fieldset>
+            </td>
+            <td><b>Выпадающий и мульти списки:</b>
+                <fieldset>Города РБ<br>
+                    <select name="list" id="list">
+                        <optgroup label="Города РБ">
+                            <option value="1">Минск</option>
+                            <option value="2">Витебск</option>
+                            <option value="3">Гродно</option>
+                            <option value="4">Гомель</option>
+                            <option value="5">Брест</option>
+                            <option value="6">Могилев</option>
+                            <option value="7">Мозырь</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                            <option value="8">Москва</option>
+                            <option value="9">Санкт-Петербург</option>
+                            <option value="10">Смоленск</option>
+                            <option value="11">Ярославль</option>
+                        </optgroup>
+                    </select>
+                    <select name="list2" id="list2">
+                        <optgroup label="Города">
+                            <option value="1">Слуцк</option>
+                            <option value="2">Солигорск</option>
+                            <option value="3">Ганцевичи</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="ok">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Загрузка файла на сервер:</b> <br>
+            <fieldset>Upload<br>
+                <p>Файл:</p>
+            <input type="file" name="Choose file">
+            <p>Срок хранения(года)</p>
+            <input type="number" name="загрузить">
+            <form enctype="multipart/form-data" method="post"></form>
+            <input type="submit" value="загрузить">
+            </fieldset>
+            </td>
+            <td><b>Валидация данных на HTML5:</b><br>
+            <Fieldset>Строка поиска<br>
+                <input type="text" pattern="([А-Я][а-я])"> <br>
+                <input type="text" pattern="/(?:\+375|80)\s?\(?\d\d\)?\s?\d\d(?:\d[\-\s]\d\d[\-\s]\d\d|[\-\s]\d\d[\-\s]\d\d\d|\d{5})/">
+
+                <input type="submit" value="проверить">
+            </Fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- на это все ушло много часов чтения,пересмотра, поисков и я так и не поняла, почему это все не работает и что не так в моем случае, особенно с регулярками-->
