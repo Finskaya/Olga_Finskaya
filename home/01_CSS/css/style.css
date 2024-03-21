@@ -1,0 +1,21 @@
+body {
+    color: darkmagenta;
+    background-color: cadetblue
+}
+
+.vip {
+    color: #000;
+}
+
+.vip1 {
+    color: blue;
+}
+
+ul.vip2 li {
+    color: crimson;
+
+}
+
+ul.vip4 li {
+    color: darkgreen;
+}
