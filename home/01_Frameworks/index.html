@@ -1,0 +1,96 @@
+<!doctype html>
+<html  lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-float.min.css"
+        crossorigin="anonymous">
+    <title>Foundation Starter Template</title>
+    <link rel="stylesheet" href="css/css/foundation.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="title columns small-12 large-12">
+            <h1>HOW-TO: Программа на Python, Часть 1</h1>
+        </div>
+        <div class="list columns small-12 large-12"></a>
+            <ul>
+                <li><i><a href="1.HTML">Программа на Python — часть 1</a></i> </li>
+                <li><i><a href="2.HTML">Программа на Python — часть 2</a></i></li>
+                <li><i><a href="3.HTML">Программа на Python — часть 3</a></i></li>
+            </ul>
+        </div>
+        <div class="title columns small-12 large-12">
+            <h1>HOW-TO: Программа на Python, Часть 1</h1>
+        </div>
+        <div class="title columns small-12 large-12">
+            <h3 >Содержание</h3>
+        </div>
+        <div class="list columns small-12 large-12">
+            <ul>
+                <li><a href="1.HTML">Наша первая программа</a> </li>
+                <li><a href="1.HTML">Пример цикла For</a></li>
+                 </ul>
+        </div>
+<div class="title columns small-12 large-12">
+    <p>Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.</p>
+</div>
+<div class="title columns small-12 large-12"><h2>Наша первая программа</h2></div>
+<div class="title columns small-12 large-12"><p> <a href="1.HTML">К содержанию</a></p></div>
+<div class="title columns small-12 large-12"> <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+    каждая строка и пойдём дальше.</p></div>
+    <div class="title columns small-12 large-12"><p>Введите эти 4 строки:</p></div>
+    <div class="title columns small-12 large-12">
+        <pre><I>#!/usr/bin/env python</I>
+<I>print 'Hello. I am a python program.'</I>
+<I>name = raw_input("What is your name?")</I>
+<I>print "Hello there, " + name + "!"</I></pre></div>
+<div class="title columns small-12 large-12">
+    <p>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+        <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале</p></div>
+<div class="title columns small-12 large-12">
+    <p><u><b>chmod +x hello.py</b></u></p>
+</div>
+<div  class="title columns small-12 large-12"><p>в папке, в которой вы сохранили программу. Теперь запустите её.</p></div>
+<div  class="title columns small-12 large-12">
+<pre><I>greg@earth:~/python_examples$ ./hello.py</I>
+<I>Hello. I am a python program.</I>
+<I>What is your name? Ferd Burphel</I>
+<I>Hello there, Ferd Burphel!</I>
+<I>greg@earth:~/python_examples$</I></pre></div>
+<div class="title columns small-12 large-12"><p><b>Вот и всё.</b> </p></div>
+<div class="title columns small-12 large-12"> <h2>Пример цикла For</h2></div>
+<div class="title columns small-12 large-12"><p><a href="1.HTML">К содержанию</a> </p></div>
+<div class="title columns small-12 large-12"><p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+    редактор и наберите следующую программу:</p></div>
+<div class="title columns small-12 large-12">
+    <pre><I>#!/usr/bin/env python</I>
+<I>for cntr in range(0,10):</I>
+<I>print cntr</I></pre>
+</div>
+<div class="title columns small-12 large-12"><p><I>Не забудьте поставить символ табуляции перед строкой «print cntr».</I>Это важно. В
+    Python для указания на блоки кода используются не круглые «<B>(</B>» и фигурные «<B>{</B>» скобки
+    как в других языках программирования, а отступы.</p></div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"
+            crossorigin="anonymous"></script>
+        <script src="css/js/vendor/foundation.min.js"></script>
+        <script src="css/js/vendor/what-input.js"></script>
+        <script src="css/js/vendor/jquery.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+</body>
+
+</html>
